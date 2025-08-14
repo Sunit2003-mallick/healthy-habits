@@ -1,0 +1,48 @@
+.about h2 { 
+    margin-top: 0; 
+}
+.mission-grid { 
+    margin-top: 16px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); 
+    gap: 14px; 
+}
+.mission-card { 
+    padding: 16px; 
+    border: 1px solid #1f2633; 
+    border-radius: 16px; 
+    background: linear-gradient(180deg, #131925, #0f1420); 
+}
+
+.contact {
+  margin-top: 22px; 
+  padding: 16px; 
+  border: 1px solid #1f2633; 
+  border-radius: 16px;
+  background: linear-gradient(180deg, #141a26, #0f1320);
+}
+.contact .row { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; }
+@media (max-width: 700px) { 
+    .contact .row { 
+        grid-template-columns: 1fr; 
+    } 
+}
+.contact input, .contact textarea {
+  width: 100%; 
+  padding: 10px 12px; 
+  border-radius: 10px; 
+  border: 1px solid #243049; 
+  background: #0e1422; 
+  color: #e6edf3;
+  outline: none;
+}
+.contact textarea { 
+    resize: vertical; 
+    margin-top: 10px; 
+}
+.contact .btn { 
+    margin-top: 10px; 
+}

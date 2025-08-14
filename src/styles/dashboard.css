@@ -1,0 +1,133 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile {
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #1b2233, #121827);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #27ae60;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.muted {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.habit-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #141a26, #0f1320);
+  border: 1px solid #1f2633;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-3px);
+}
+
+.habit-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.habit-meta {
+  color: #c9d4e8;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.progress {
+  background: #1a2233;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  transition: width 0.25s ease;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.btn.small {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.btn.primary {
+  background: #27ae60;
+  color: #fff;
+}
+
+.tip {
+  margin-top: 20px;
+  display: flex;
+  width: 73vw;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #141a26, #0f1320);
+  border: 1px solid #1f2633;
+}
+
+.tip img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-content h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.tip-content p {
+  color: #c9d4e8;
+  margin-top: 6px;
+}

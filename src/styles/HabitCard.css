@@ -1,0 +1,58 @@
+.habit-card {
+  background: linear-gradient(180deg, #141a26, #0f1320);
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  border: 1px solid #1f2633;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.progress-bar {
+  background: #1a2233;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress {
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: translateY(-1px);
+}
+
+.buttons .increment {
+  background: #27ae60;
+  color: white;
+}
+
+.buttons .decrement {
+  color: white;
+}
+

@@ -1,0 +1,52 @@
+.reports-head { 
+    display: flex; 
+    align-items: center; 
+    gap: 18px; 
+    flex-wrap: wrap; 
+    margin-bottom: 18px; 
+}
+.score {
+  background: linear-gradient(180deg, #8b99b6, #0f1320);
+  border: 1px solid #1f2633; 
+  border-radius: 14px; 
+  padding: 12px 16px; 
+  text-align: center;
+}
+.score span { 
+    display: block; 
+    font-size: 28px; 
+    font-weight: 800; 
+}
+.score small { 
+    color: #a5b1c2; 
+}
+
+.charts { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px; 
+}
+@media (max-width: 900px) { 
+    .charts { 
+        grid-template-columns: 1fr; 
+    } 
+}
+.chart-card { 
+    padding: 16px; 
+    border: 1px solid #1f2633; 
+    border-radius: 16px; 
+    background: linear-gradient(180deg, #121827, #0e1422); 
+}
+
+.insights {
+  margin-top: 18px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+  gap: 14px;
+}
+.insight-card { 
+    padding: 16px; 
+    border: 1px solid #1f2633; 
+    border-radius: 16px; 
+    background: linear-gradient(180deg, #141a26, #0f1320); 
+}
